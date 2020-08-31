@@ -1,0 +1,7 @@
+<!--miniprogram/pages/showEdit/showEdit.wxml-->
+<view class="container">
+	<textarea class = "edit animated fadeIn" maxlength = "{{tmaxlength}}" bindinput='inputSaver' focus='true' value = "{{content}}" id = '{{count}}'></textarea>
+</view>
+<button class = "confirmView" bindtap='confirmFunc'>
+  确定
+</button>

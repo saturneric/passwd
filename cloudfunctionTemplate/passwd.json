@@ -1,0 +1,22 @@
+[
+  {
+    "name": "decoder",
+    "value": {
+      "method": "decoder",
+      "argv": {
+        "handle": "b0bf0e91d3ae59711d9569998d4d334b3d551121ede824233d3c8888dd89c3d5",
+        "openid": "oLYkK4-QKvlCBxZFw8qF4suJplv0"
+      }
+    }
+  },
+  {
+    "name": "deleter",
+    "value": {
+      "method": "deleter",
+      "argv": {
+        "openid": "oLYkK4y0t2DjbMijYDURhyqPCQSU",
+        "handle": "19ee001b09e1a39a3c37f72f01528dab2ede602880572b460229e8db85b167c5"
+      }
+    }
+  }
+]

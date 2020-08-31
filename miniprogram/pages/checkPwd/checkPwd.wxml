@@ -1,0 +1,25 @@
+<view>
+<view class='data'>
+  <view wx:if='{{hasUserInfo == true && confirmUserInfo == true}}' class="animated fadeIn">
+    <form bindsubmit='getPwdInfo' >
+      <text>请填写并牢记你的六位独立密码</text>
+      <input type='number' password='true' class="passwd" name="passwd" focus='true' maxlength='6'></input>
+      <button form-type="submit" class="set-button">好了，我记住了</button>
+    </form>
+  </view>
+  <view wx:elif='{{hasUserInfo == false && confirmUserInfo == false}}' class='register-view animated fadeIn'>
+    <button class="register-button" bindgetuserinfo='userInfoHandler' open-type='getUserInfo'>一键注册</button>
+    <text class="info-text-one">“你将获得将你的密码与笔记结合的强大能力，</text>
+    <text class="info-text">定制的密码生成算法将确保您的账号安全无虞。”</text>
+    <text class="info-text-end">您的关键信息始终在云端加密储存，安全、稳妥。</text>
+  </view>
+   <view wx:elif='{{hasUserInfo == true && confirmUserInfo == false}}' class='show-view'>
+    <open-data class = "avatar animated rubberBand" type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data>
+    <button class="confirm-button animated fadeInRight" bindtap='confirmUserInfo'>下一步</button>
+  </view>
+  
+</view>
+
+
+</view>

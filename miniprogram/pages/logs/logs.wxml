@@ -1,0 +1,37 @@
+<view wx:if='{{check1&&check2}}'>
+<view class = 'margin'>
+  <view class = 'searchview'>
+    <view class ='overall' >
+      <view class = "icon-group">
+        <icon class = "iconfont icon-sousuo"></icon>
+      </view>
+      <input class ='search-input' type ='text' placeholder ='输入密码标签' value ='{{flag}}'  confirm-type ='search' bindblur = "searchBlur" bindconfirm ='gosearch' bindinput ='inputsearch' bindfocus="{{focusKey}}"></input>
+    </view>
+    <scroll-view scroll-y="true" class="scrollview" hidden="{{hideScroll}}" style="{{arrayHeight>340?'height:340rpx':''}}">
+      <view wx:for="{{bindlist}}" class="itemview">
+        <view id="{{item}}" bindtap="itemtap" ><text>{{item}}</text></view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class = 'interval'></view>
+<block wx:for="{{showViewList}}" wx:key="index">
+  <view class='showView1 animated bounceInLeft' wx:if = "{{index % 2 == 0}}"> 
+    <view class ='textView1' bindtap='clickEvent' id="{{index}}">
+      <text class="brief-title" id="{{index}}">{{item.id}}</text>
+      <text class="brief" id="{{index}}">{{item.user}}</text>
+    </view>
+  </view>
+  <view class = 'showView2 animated bounceInRight' wx:if = "{{index % 2 == 1}}">
+    <view class ='textView2' id="{{index}}">
+      <text bindtap='clickEvent' id="{{index}}">{{item.id}}</text>  
+      <text id="{{index}}">{{item.user}}</text>
+    </view>
+  </view>
+</block>
+</view>
+<view  wx:if='{{!(check1&&check2)}}' >
+<view class='log'>请先验证六位密码</view>
+<button class='log' bindtap='login'>点击这里刷新</button>
+</view>

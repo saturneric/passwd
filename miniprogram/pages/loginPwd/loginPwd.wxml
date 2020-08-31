@@ -1,0 +1,10 @@
+<view class='{{mover}}'>
+  <view>
+    <form bindsubmit='getPwdInfo' >
+    <view class="data-text"></view>
+      <text class="data-text">验证六位独立密码</text>
+      <input type='number' password='true' class="passwd" name="passwd" focus='true' maxlength='6' value="{{pwd}}"></input>
+      <button form-type="submit" class="set-button">确定</button>
+    </form>
+  </view>
+</view>

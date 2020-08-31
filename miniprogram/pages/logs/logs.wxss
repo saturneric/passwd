@@ -1,0 +1,158 @@
+/* miniprogram/pages/logs/logs.wxss */
+
+.margin{
+  border-width: 1rpx;
+  border-style: solid;
+  border-color: #3f72af;
+  border-radius: 15rpx;
+  width: 749rpx;
+  background-color: #85C1E9;
+  margin-top: 15rpx;
+}
+.searchview{
+  padding-right: 750rpx;
+  background-color: #85C1E9;
+  border-right: 0;
+  align-content: middle;
+  border-radius: 10rpx;
+  padding-left: 70rpx;
+  height: 70rpx;
+  width: 730rpx;
+}
+.overall{
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+  width: 100%;
+}
+.search-input{
+  border-radius: 15rpx;
+  padding-right: 0rpx;
+  box-sizing: border-box;
+  background-color: #85C1E9;
+  color:#f9f7f7;
+  width: 100%;
+  left: 0;
+}
+.searchicon{
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  background-size: 31rpx auto;
+  left: 5rpx;
+  top: 10rpx;
+}
+.overall {
+  height: 83rpx;
+  padding-right: 20rpx;
+  margin-top: 10rpx;
+  width: 300rpx;
+  left: 20rpx;
+}
+.iconView{
+  top:10rpx;
+  width: 20px;
+  height: 25px;
+  /*border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  /*transform: rotate(45deg);*/
+  right:0%;
+}
+.interval{
+  height: 25rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  border-right: 0;
+  border-color: #3f72af;
+  border-top: 0;
+  border-left: 0;
+}
+.textView1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#85C1E9;
+  
+  font-style: normal;
+  font-weight: 500;
+  height: 110rpx;
+  width: 720rpx;
+  
+}
+.textView2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110rpx;
+  background-color:#dad9ff;
+  font-style: normal;
+  font-weight: 500;
+  width: 720rpx;
+  
+}
+.showView1{
+  display: flex;
+  width: 750rpx;
+  justify-content: center;
+  align-items: center;
+  background: #3f72af;
+  height: 100rpx;
+  border-style:normal;
+  border-width: 10rpx;
+  border-right: 0;
+  border-color: #3f72af;
+}
+.showView2{
+  display: flex;
+  width: 750rpx;
+  justify-content: center;
+  height: 100rpx;
+  align-items: center;
+  background: #3f72af;
+  border-style:normal;
+  border-width: 10rpx;
+  border-right: 0;
+  border-color: #3f72af;
+}
+
+.brief{
+  color:white;
+}
+
+.brief-title{
+  color: white;
+}
+
+.log{
+  text-align: center;
+  margin-top: 50rpx;
+
+}
+
+.scrollview{
+  position: absolute;
+  background-color: rgb(156, 204, 236);
+  z-index: 999;
+  opacity:0.9;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 1rpx;
+  color:white;
+  left: 0%;
+}
+
+.itemview{
+  border-color: white;
+  border-width: 1rpx;
+  color:white;
+  margin-bottom: 2rpx;
+  font-size: 50rpx;
+}
+
+.iconfont{
+  position: fixed;
+  left: 6.8rpx; 
+}

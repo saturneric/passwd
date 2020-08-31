@@ -1,0 +1,15 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "检查用户是否存在",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saturneric",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "crypto": "latest"
+  }
+}

@@ -1,0 +1,34 @@
+/* miniprogram/pages/show/show.wxss */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  width: 720rpx;
+  border-radius: 20rpx;
+  height: 450rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #3f72af;
+}
+
+.edit{
+  border-color: #3f72af;
+  font-size: 40rpx;
+  background-color: #dbe2ef;
+  border-radius: 20rpx;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+  width: 700rpx;
+  height: 420rpx;
+}
+
+.saved-btn{
+   background-color:#3f72af;
+  color:white;
+  width: 400rpx;
+  
+}

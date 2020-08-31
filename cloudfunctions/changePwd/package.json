@@ -1,0 +1,15 @@
+{
+  "name": "changePwd",
+  "version": "1.0.0",
+  "description": "修改用户六位独立密码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "crypto": "latest"
+  }
+}

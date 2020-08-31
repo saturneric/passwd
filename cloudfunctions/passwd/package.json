@@ -1,0 +1,16 @@
+{
+  "name": "passwd",
+  "version": "1.0.0",
+  "description": "为用户计算并储存密码，维护密码数据库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saturneric",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "crypto": "latest",
+    "crypto-js": "latest"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/logs/logs",
+    "pages/create/create",
+    "pages/checkPwd/checkPwd",
+    "pages/show/show",
+    "pages/showPwd/showPwd",
+    "pages/showEdit/showEdit"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3f72af",
+    "navigationBarTitleText": "密码便签",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#45deff",
+    "borderStyle": "white",
+    "backgroundColor": "#3f72af",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "资料卡",
+        "iconPath": "images/1-1.png",
+        "selectedIconPath": "images/1-2.png"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "text": "密码便签",
+        "iconPath": "images/2-1.png",
+        "selectedIconPath": "images/2-2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "便签集",
+        "iconPath": "images/3-1.png",
+        "selectedIconPath": "images/3-2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

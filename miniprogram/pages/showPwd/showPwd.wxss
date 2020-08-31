@@ -1,0 +1,122 @@
+/* miniprogram/pages/showPwd/showPwd.wxss */
+.overall{
+  left:20rpx;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #d8f3fa;
+  height:100%;
+  word-break:break-all;
+}
+.container{
+  margin-top: 15rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+  background-color: #f7f8f9;
+  border-radius: 15rpx;
+  margin-left:15rpx;
+  margin-right:15rpx;
+}
+
+.edit-title{
+  position: fixed;
+  color: #3f72af;
+  bottom: 20rpx;
+  right: 0;
+  text-align: right;
+  height: 70rpx;
+}
+.edit{
+  position: fixed;
+  color: #3f72af;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+.show{
+  position: fixed;
+  font-size: 40rpx;
+  font-weight:bold;
+  width: 80%;
+  bottom: 20rpx;
+  left: 10rpx;
+
+}
+.isRuleShow {
+  opacity: 1;
+}
+.isRuleHide {
+  opacity: 0;
+}
+.tag-show{
+  display: flex;
+  flex-direction: rows;
+  margin-top: 15rpx;
+  width : 735rpx;
+  height : 80rpx;
+  background-color: #85C1E9;
+  border-style: solid;
+  border-width: 10rpx;
+  border-color: #3f72af;
+}
+
+.user-show{
+  width : 735rpx;
+  height : 450rpx;
+  background-color: #fcfcfc;
+  border-style: solid;
+  border-width: 10rpx;
+  border-color: #3f72af;
+  
+}
+
+.passwd-show{
+  display: flex;
+  flex-direction: rows;
+  margin-top: 25rpx;
+  width : 750rpx;
+  height : 70rpx;
+  background-color: #85C1E9;
+  font-size: 50rpx;
+  font-weight:bold;
+  border-style: solid;
+  border-width: 2rpx;
+  border-color: #3f72af;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-group{
+  width:100%;  
+  border-radius: 3px;  
+  padding-top:2px;  
+  font-size:14px;  
+  color:red;  
+  overflow:hidden;  
+  height:45px;  
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+
+.passwd-copy{
+  position: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:50rpx;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 1rpx;
+  border-radius: 15rpx;
+  width: 200rpx;
+  right: 0;
+  margin-top: 10rpx;
+}
+
+.passwd-text{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+}
+
+.icon-font{
+  position: fixed;
+  left:233rpx;
+  bottom:0%
+}

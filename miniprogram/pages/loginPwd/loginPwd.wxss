@@ -1,0 +1,43 @@
+/* miniprogram/pages/loginPwd/loginPwd.wxss */
+/* miniprogram/pages/checkPwd/checkPwd.wxss */
+.passwd{
+  background-color: #dbe2ef;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #85C1E9;
+  width: 400rpx;
+  height: 80rpx;
+  margin-left: 150rpx;
+  margin-right: 150rpx;
+  margin-top: 80rpx;
+  text-align: center;
+  font-size: 60rpx;
+  border-radius: 20rpx;
+}
+
+.data{
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #3f72af;
+  background-color: white;
+  margin-top: 80rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 20rpx;
+  height: 480rpx;
+  text-align: center;
+}
+
+.set-button{
+  background-color:#3f72af;
+  color:white;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 110rpx;
+}
+
+.data-text{
+  height: 30rpx;
+  color: #112d4e;
+  background-color: white;
+}

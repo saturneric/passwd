@@ -1,0 +1,7 @@
+{
+  "desc": "密码记事本",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}

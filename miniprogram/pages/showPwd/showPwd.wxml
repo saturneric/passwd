@@ -1,0 +1,24 @@
+<!--miniprogram/pages/showPwd/showPwd.wxml-->
+<view class ='overall'>
+  <view class = "tag-show animated fadeInRight">
+    <view class='show'>{{id}}</view>
+    <button class ='edit-title' bindtap ='tapEdit' id = "{{id}}" data-experienced = "{{1}}">
+      编辑
+    </button>
+  </view>
+  <view class = "user-show animated fadeInRight">
+    <label>{{user}}</label>
+    <button class='edit' bindtap ='tapEdit' id = "{{user}}" data-experienced = "{{2}}">
+      编辑
+    </button>
+  </view>
+  <view class = "passwd-show animated fadeInRight" wx:if='{{passwd != ""}}'>
+    <view class="passwd-text">密码: {{passwd}}</view>
+  </view>
+  <view class ="passwd-copy animated fadeInRight delay-1s" bindtap='copyPwd' wx:if='{{passwd != ""}}'>复制密码</view>
+</view>
+<view class = "icon-group">
+  <icon class = "iconfont icon-shanchu" bindtap='clickCancel' ></icon>
+  <modal title = "您确定要删除这条记录？" confirm-text = "确定" cancel-text = "取消"
+          hidden = "{{mHidden}}" bindconfirm = "confirmFunc" bindcancel = "cancelFunc"></modal>
+</view>

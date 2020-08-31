@@ -1,0 +1,4 @@
+<!--show.wxml-->
+<view class="container">
+	<textarea class = "edit animated fadeIn" bindinput='inputSaver' value = "{{user}}"></textarea>
+</view>

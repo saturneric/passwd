@@ -1,0 +1,49 @@
+<view class="all-container animated fadeIn">
+<form bindsubmit='confirm'>
+  <view class="container">
+    <input class='{{tagclass}}' name="wxml_id" placeholder="密码标签" maxlength = "14" value='{{id}}' />
+    <label class="info-label animated shake" wx:if='{{id_tag != ""}}'>{{id_tag}}</label>
+  </view>
+  <view class="container">
+    <input class='pass-ipt' name="wxml_user" placeholder="关联信息（非必须）" value='{{usershow}}' bindtap='goShow'/>
+    <button class='generate-btn' bindtap='scan'>扫码</button>
+  </view>
+  <view class="container">
+    <input class='{{passwdclass}}'name="wxml_scode" placeholder="密码" maxlength = "20" value='{{scode}}'/>
+    <button class='generate-btn' bindtap='give_scode'>生成密码</button>
+  </view>
+  <view class="d-container">
+  <view class="section-title">选择密码长度</view>
+    <picker bindchange="bindLenPickerChange" value="{{len_index}}" range="{{len_array}}">
+      <view class="picker">
+        <text>{{len_array[len_index]}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="d-container">
+   <view class="section-title">是否含有大小写</view>
+      <picker bindchange="bindUpperPickerChange" value="{{upper_index}}" range="{{upper_array}}">
+        <view class="picker">
+          <text>{{upper_array[upper_index]}}</text>
+        </view>
+      </picker>
+  </view>
+
+  <view class="d-container">
+    <view class="section-title">是否含有特殊字符</view>
+      <picker bindchange="bindSpecialPickerChange" value="{{special_index}}" range="{{special_array}}">
+        <view class="picker">
+          <text>{{special_array[special_index]}}</text>
+        </view>
+      </picker>
+  </view>
+  <view wx:if='{{if_generate}}' class = "tip-show ">
+    <button class='confirm-btn animated bounceIn' form-type='submit'>添加到记事本</button>
+    <text>您也可以生成密码后自定义您的密码</text>
+  </view>
+  <view wx:else class="tip-show">
+    <text>您的密码会在云端加密储存以确保安全</text>
+  </view> 
+</form> 
+</view>
